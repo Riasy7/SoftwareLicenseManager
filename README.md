@@ -1,6 +1,6 @@
 # AJA Software Licenses' Manager
 
-This project is a Software Licensing Manager Website. It incorporates bits of code from Bootstrap, which is licensed under the MIT License.
+This project is a Software Licensing Manager Website. Please keep in mind this is just the front-end html aspect of the website and it solely here to showcase the front-end design and feel of the website. Please refer to the back-end repository for back-end features.
 
 ## Front-end Visual Representation:
 
