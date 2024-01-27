@@ -13,7 +13,7 @@ This repository primarily contains the front-end code of the AJA Software Licens
   - Preview HTML files in the browser via "File" > "Open File" in VSCode.
   - Interact with the website in the browser for testing and visual exploration.
 
-- For back-end functionality: Please refer to https://github.com/Riasy7/SoftwareLicenseManager-Back-End
+- For back-end functionality: Please refer to https://github.com/Riasy7/SoftwareLicenseManager-FullWebsite
  
 
 ## Usage
