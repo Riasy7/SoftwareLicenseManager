@@ -1,10 +1,6 @@
 # AJA Software Licenses' Manager
 
-This project is a comprehensive Software Licensing Manager Website incorporating Bootstrap code, licensed under the MIT License.
-
-*This is only a visual representation. Refer to download section to download the proper back-end features.*
-
-## Usage
+This project is a Software Licensing Manager Website. It incorporates bits of code from Bootstrap, which is licensed under the MIT License.
 
 ## Front-end Visual Representation:
 
@@ -17,145 +13,73 @@ This repository primarily contains the front-end code of the AJA Software Licens
   - Preview HTML files in the browser via "File" > "Open File" in VSCode.
   - Interact with the website in the browser for testing and visual exploration.
 
-- For back-end functionality and database setup:
-  - Refer to the "Setting up the Database" and "Environment Variable Configuration" sections.
-  - Access the back-end features by downloading the provided back-end files and configuring the environment variables accordingly.
+- For back-end functionality: Please refer to https://github.com/Riasy7/SoftwareLicenseManager-Back-End
+ 
 
-### For Clients:
+## Usage
 
-- **Landing Page:** Featuring a header, footer, and navigation bar for easy website navigation.
-- **Login Page:** Securely access your account.
-- **Registration Page:** Set up new accounts with personal information.
-- **Dashboard:** A user-friendly dashboard displays account details, including name, address, and vital information.
-- **Serial Number Management:** View and manage serial numbers, including software names, purchase dates, and expiry dates.
-- **Adding Serial Numbers:** Add new serial numbers using a straightforward page with necessary fields.
-- **License Management:** Dedicated page for renewing or discontinuing licenses, especially for subscription-based licenses.
-- **Acquiring New Licenses:** Conveniently procure new licenses for software.
+For Clients:
 
-### For Software Providers:
+    Landing Page: The landing page features a header, footer, and a navigation bar, providing easy access to different sections of the website.
 
-- **Landing Page:** Equipped with a header, footer, and navigation bar for efficient website navigation.
-- **Provider Access:** Secure login page for software providers to access their accounts.
-- **Registration:** Specific page for software providers to establish new accounts.
-- **Provider Dashboard:** Comprehensive dashboard offers an overview of clients' accounts, including essential information.
-- **Serial Number Management:** Generate new serial numbers and associate them with specific products and client accounts.
-- **Serial Number Control:** Dedicated page for enabling/unblocking or disabling/blocking individual serial numbers.
-- **Client Notifications:** Notification feature for communication with clients through emails, including subscription renewals, invalid serial numbers, and irregular serial number usage.
+    Login Page: Clients can use the login page to securely access their accounts.
 
+    Registration Page: A dedicated registration page allows clients to set up new accounts with their information.
 
-## Setting up the Database
+    Dashboard: Clients have access to a user-friendly dashboard that displays their account details, including their name, address, and other vital information.
 
-To use AJA Software Licenses' Manager, you need to set up a database and configure the necessary environment variables.
+    Serial Number Management: A page is available for clients to view their collection of serial numbers, including software names, purchase dates, expiry dates, and other key data.
 
-### Database Configuration
+    Adding Serial Numbers: Clients can add new serial numbers to their accounts using a straightforward page with all the necessary fields.
 
-1. **XAMPP with MySQL:**
-   - Install [XAMPP](https://www.apachefriends.org/index.html) to set up a local development environment with MySQL.
-   - Open XAMPP and start the Apache and MySQL services.
+    License Management: A dedicated page allows clients to renew or discontinue renewing their licenses, particularly for subscription-based licenses.
 
-2. **MySQL Database Setup:**
-   - Access PHPMyAdmin through `http://localhost/phpmyadmin/`.
-   - Create a new database for the project, e.g., `aja_licenses`.
-   - Import the SQL schema from the provided `schema.sql` file to create the necessary tables.
+    Acquiring New Licenses: Clients can conveniently procure new licenses for their software.
 
-### Environment Variable Configuration
+For Software Providers:
 
-1. **Copy the `.env.example` file:**
-   - Duplicate the `.env.example` file in the project root directory.
-   - Rename the duplicate file to `.env`.
+    Landing Page: The landing page is equipped with a header, footer, and a navigation bar for efficient website navigation.
 
-2. **Update the Database Connection Details:**
-   - Open the `.env` file in a text editor.
-   - Locate the following lines:
+    Provider Access: Software providers can access their accounts through a secure login page.
 
-     ```env
-     DB_HOST=localhost
-     DB_USER=root
-     DB_PASSWORD=
-     DB_DATABASE=aja_licenses
-     ```
+    Registration: A specific registration page is available for software providers to establish new provider accounts.
 
-   - Update the values according to your MySQL configuration.
-   
-3. **Other Environment Variables:**
-   - Review other variables in the `.env` file and adjust them if necessary, such as the port number or any secret keys.
+    Provider Dashboard: Software providers have access to a comprehensive dashboard that offers an overview of their clients' accounts, including essential information.
 
-### Save Changes and Run the Application
+    Serial Number Management: Software providers can generate new serial numbers and associate them with specific products and client accounts.
 
-1. **Save the `.env` File:**
-   - Save the changes made to the `.env` file.
+    Serial Number Control: A dedicated page allows software providers to enable/unblock or disable/block individual serial numbers as needed.
 
-2. **Run the Application:**
-   - If the application is not already running, start the server using the provided scripts or with the command `npm start` or `nodemon server.js`.
-
-3. **Access the Website:**
-   - Open your browser and navigate to the specified port (default is `http://localhost:3000/`).
-
-Now your AJA Software Licenses' Manager should be connected to the configured database, and you can start using the application.
-
-## Backend Features:
-
-- **User Authentication:**
-  - `auth.js`: Handles user authentication.
-  - `authenticate.js`: Middleware to authenticate user sessions.
-  - `login.js` and `logout.js`: Manage user login and logout.
-  - `profile.js`: Manages user profile information.
-  - `signup.js`: Handles user registration.
-
-- **License Management:**
-  - `license.js`: Manages licenses, including renewal and discontinuation.
-
-- **Serial Number Control:**
-  - `disableenable.js`: Enables/Disables or Blocks/Unblocks individual serial numbers.
-
-- **Table Creation:**
-  - `dbconfig.js`: Configures the XAMPP MySQL database.
-  - `pages.js`: Handles routes for different pages.
-
-- **Profile Picture Storage:**
-  - Images uploaded through the profile management feature are stored in the `uploads` folder.
+    Client Notifications: Software providers have a notification feature that enables communication with clients through emails when required, including notifications about subscription renewals, invalid serial numbers, and irregular serial number usage.
 
 ## Installation Guide
+    Open in a Browser:
+        Download the "AJA_Website.zip" file from the source, which could be a website or a repository.
+        Extract the contents of the ZIP file to a location of your choice on your computer.
 
-1. **Open in a Browser:**
-   - Download the "AJA_Website.zip" file from the source.
-   - Extract the contents to a location of your choice on your computer.
-  
-2. **View the Code:**
-   - Open the project folder in VSCode to navigate through the files and directories.
+    View the Code:
+        Once the project folder is opened in VSCode, you can navigate through the project's files and directories in the sidebar on the left.
+      
+    Preview in a Browser:
+        In the browser, you can open your HTML files directly by going to "File" > "Open File" and selecting the HTML file you want to preview.
 
-3. **Preview in a Browser:**
-   - Open HTML files in the browser via "File" > "Open File" in VSCode.
+    Test the Code:
+        Interact with the website in the browser to test.
 
-4. **Test the Code:**
-   - Interact with the website in the browser for testing purposes.
+    Deployment:
+        To deploy the website either you can open it locally on your own pc/laptop. Or you can use a free repository like github or vercel.
 
-5. **Deployment:**
-   - Deploy the website locally or use a repository like GitHub or Vercel for broader accessibility.
+This project includes modified code from Bootstrap, used for bits of code for a few pages.
 
-## Main Applications and Dependencies:
 
-- **XAMPP with MySQL Database:**
-  - Utilized XAMPP for MySQL database setup and management through PHPMyAdmin.
+### Third-Party Code
 
-- **Node.js Packages (from `package.json`):**
-  - `@emailjs/browser`: Email sending capabilities.
-  - `bcryptjs`: Password hashing.
-  - `body-parser`: Parses incoming request bodies.
-  - `cookie-parser`: Parses cookie headers.
-  - `dotenv`: Loads environment variables.
-  - `ejs`: Embedded JavaScript templates.
-  - `emailjs`: Email sending capabilities.
-  - `express`: Web application framework.
-  - `jsonwebtoken`: JSON Web Token generation and verification.
-  - `multer`: File uploading middleware.
-  - `mysql`: MySQL database connectivity.
-  - `nodemon`: Monitors for changes and automatically restarts the server.
+This project incorporates code from Bootstrap, which is licensed under the MIT License.
 
-## Third-Party Code
-
-This project incorporates code from Bootstrap, licensed under the MIT License.
-
-- **Original Bootstrap License:**
+- Original Bootstrap License:
   - Copyright (c) 2011-2022 Twitter, Inc.
-  - [Bootstrap License](https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  - (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+
+
+
+
